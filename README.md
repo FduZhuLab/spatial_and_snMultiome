@@ -24,7 +24,7 @@ cell-cell interaction analysis with cellchat
 
 ## 06.Peak_calling
 
-generation of reproducible ATAC peaks according to the pipeline of [Bing Ren et al., 2021] (https://www.nature.com/articles/s41586-021-03604-1).
+generation of reproducible ATAC peaks according to the pipeline of [Bing Ren et al., 2021](https://www.nature.com/articles/s41586-021-03604-1).
 
 ## 07.SCENIC+
 
