@@ -1,0 +1,6 @@
+Glutamatergic,class_label
+GABAergic,class_label
+Astro,subclass_label
+Oligo,subclass_label
+OPC,subclass_label
+Microglia,subclass_label
