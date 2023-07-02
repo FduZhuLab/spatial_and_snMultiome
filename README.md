@@ -1,6 +1,6 @@
-# snMultiome_script
+# Introduction
 
-the scripts for sn-Multiome data analysis
+The scripts for analysis of **"Gene regulatory innovations underlying human neocortical diversification"**.
 
 ## 01.Clustering
 
@@ -20,11 +20,11 @@ Deconvolution of the spatial transcriptome data, including nucleus segmentation 
 
 ## 05.CellChat
 
-cell-cell interaction analysis with cellchat
+Cell-cell interaction analysis with cellchat
 
 ## 06.Peak_calling
 
-generation of reproducible ATAC peaks according to the pipeline of [Bing Ren et al., 2021](https://www.nature.com/articles/s41586-021-03604-1).
+Generation of reproducible ATAC peaks according to the pipeline of [Bing Ren et al., 2021](https://www.nature.com/articles/s41586-021-03604-1).
 
 ## 07.SCENIC+
 
