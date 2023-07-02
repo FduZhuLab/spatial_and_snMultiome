@@ -20,7 +20,7 @@ Deconvolution of the spatial transcriptome data, including nucleus segmentation 
 
 ## 05. CellChat
 
-Cell-cell interaction analysis with cellchat
+Cell-cell interaction analysis with cellchat.
 
 ## 06. Peak Calling
 
@@ -36,7 +36,7 @@ Identification of area-specific differential accessible peaks (DAPs) at the subc
 
 ## 09. AUP Enrichment
 
-Enrichment analysis of AUPs in evolutionary ages and TE families using Fisher's exact test
+Enrichment analysis of AUPs in evolutionary ages and TE families using Fisher's exact test.
 
 ## Map files
 
