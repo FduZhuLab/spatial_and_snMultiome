@@ -26,9 +26,9 @@ Cell-cell interaction analysis with cellchat.
 
 Generation of reproducible ATAC peaks according to the pipeline of [Bing Ren et al., 2021](https://www.nature.com/articles/s41586-021-03604-1).
 
-## 07. SCENIC+
+## 07. Denosing
 
-Gene regulatory network (GRN) inference from sn-Multiome data using the SCENIC+ pipeline.
+Denoising of ATAC data using cisTopic.
 
 ## 08. DAP
 
