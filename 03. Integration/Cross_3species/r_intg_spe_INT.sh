@@ -15,10 +15,9 @@ export OMP_NUM_THREADS=${PBS_NP}
 export MKL_NUM_THREADS=${PBS_NP}
 export OPENBLAS_NUM_THREADS=${PBS_NP}
 
-celltype="GABAergic"
-echo -e "Running for ${celltype}\n"
-
 # run
+celltype="GABAergic"
+
 hs_base="${HOME}/project/multiomics/GeneAnlys"
 hs_file="${hs_base}/${celltype}/merge_rna_intg.qs"
 

@@ -8,10 +8,11 @@
 #SBATCH --job-name=Seg_Calc
 #SBATCH --output=/home/%u/slurm_log/%j.%x.out
 
-map_file="${HOME}/script/map_batch.csv"
 
-donor=$(awk -F',' -v x=${SLURM_ARRAY_TASK_ID} 'NR==x {print $1}' ${map_file})
-region=$(awk -F',' -v x=${SLURM_ARRAY_TASK_ID} 'NR==x {print $2}' ${map_file})
+var_list="${HOME}/script/batch_list.csv"
+
+donor=$(awk -F',' -v x=${SLURM_ARRAY_TASK_ID} 'NR==x {print $1}' ${var_list})
+region=$(awk -F',' -v x=${SLURM_ARRAY_TASK_ID} 'NR==x {print $2}' ${var_list})
 
 conda_env="squid"
 _CONDA_ROOT="${HOME}/programs/miniconda3"

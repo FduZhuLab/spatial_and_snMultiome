@@ -15,9 +15,9 @@ export OMP_NUM_THREADS=${PBS_NP}
 export MKL_NUM_THREADS=${PBS_NP}
 export OPENBLAS_NUM_THREADS=${PBS_NP}
 
-# read mapping file
-map_file="${HOME}/project/multiomics/CallPeak/data/map_region.csv"
-region=$(awk -F',' -v x=${PBS_ARRAYID} 'NR==x {print $1}' ${map_file})
+# read variables for PBS jobs
+var_list="${HOME}/project/multiomics/CallPeak/data/region_list.csv"
+region=$(awk -F',' -v x=${PBS_ARRAYID} 'NR==x {print $1}' ${var_list})
 
 # you'd better remove the list file if it is exist, but do not do it here because this script would be run for each region.
 summit_list="${HOME}/project/multiomics/CallPeak/data/naiveSummit.tsv"

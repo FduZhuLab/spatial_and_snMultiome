@@ -17,12 +17,12 @@ export OPENBLAS_NUM_THREADS=${PBS_NP}
 export VECLIB_MAXIMUM_THREADS=${PBS_NP}
 export NUMEXPR_NUM_THREADS=${PBS_NP}
 
-# read map file
-map_file="${HOME}/project/Spatial/Cell2loc/Nucleus_num.csv"
+# read variables for PBS jobs
+var_list="${HOME}/project/Spatial/Cell2loc/Nucleus_num.csv"
 
-donor=$(awk -F',' -v x=${PBS_ARRAYID} 'NR==x {print $1}' ${map_file})
-region=$(awk -F',' -v x=${PBS_ARRAYID} 'NR==x {print $2}' ${map_file})
-NN=$(awk -F',' -v x=${PBS_ARRAYID} 'NR==x {print $5}' ${map_file})
+donor=$(awk -F',' -v x=${PBS_ARRAYID} 'NR==x {print $1}' ${var_list})
+region=$(awk -F',' -v x=${PBS_ARRAYID} 'NR==x {print $2}' ${var_list})
+NN=$(awk -F',' -v x=${PBS_ARRAYID} 'NR==x {print $5}' ${var_list})
 
 echo -e "Running for ${donor}, ${region}\n"
 

@@ -1,6 +1,6 @@
 # Introduction
 
-The scripts for analysis of **"Gene regulatory innovations underlying human neocortical diversification"**.
+The scripts for analysis of **"Genomic sequence evolution underlying human neocortical interareal diversification"**.
 
 ## 01. Clustering
 
@@ -37,7 +37,3 @@ Identification of area-specific differential accessible peaks (DAPs) at the subc
 ## 09. AUP Enrichment
 
 Enrichment analysis of AUPs in evolutionary ages and TE families using Fisher's exact test.
-
-## Map files
-
-These are the files that map the PBS_ARRAYID to a specific batch during job submission.

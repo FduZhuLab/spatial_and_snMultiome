@@ -15,12 +15,8 @@ export OMP_NUM_THREADS=${PBS_NP}
 export MKL_NUM_THREADS=${PBS_NP}
 export OPENBLAS_NUM_THREADS=${PBS_NP}
 
-# read mapping file
-celltype="GABAergic"
-
-echo -e "Running for ${celltype}\n"
-
 # run
+celltype="GABAergic"
 qry_file="${HOME}/project/multiomics/GeneAnlys/${celltype}/merge_rna_intg.qs"
 ref_file="/home/whe/project/reference/Processed/Allen_SS_human_Multiple/subclass/${celltype}/human_obj.qs"
 out_base="${HOME}/project/multiomics/Integration/Allen_SSv4/${celltype}"

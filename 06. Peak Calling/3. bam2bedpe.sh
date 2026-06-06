@@ -15,11 +15,11 @@ export OMP_NUM_THREADS=${PBS_NP}
 export MKL_NUM_THREADS=${PBS_NP}
 export OPENBLAS_NUM_THREADS=${PBS_NP}
 
-# read mapping file
-map_file="${HOME}/script/multiomics/map_batch.csv"
+# read variables for PBS jobs
+var_list="${HOME}/script/multiomics/batch_list.csv"
 
-donor=$(awk -F',' -v x=${PBS_ARRAYID} 'NR==x {print $1}' ${map_file})
-region=$(awk -F',' -v x=${PBS_ARRAYID} 'NR==x {print $2}' ${map_file})
+donor=$(awk -F',' -v x=${PBS_ARRAYID} 'NR==x {print $1}' ${var_list})
+region=$(awk -F',' -v x=${PBS_ARRAYID} 'NR==x {print $2}' ${var_list})
 
 echo -e "Running for ${donor}, ${region}\n"
 

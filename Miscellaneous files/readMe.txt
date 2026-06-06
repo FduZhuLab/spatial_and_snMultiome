@@ -1,0 +1,1 @@
+The CSV files in this folder contain the variables required to generate the PBS job array when submitting the shell scripts.

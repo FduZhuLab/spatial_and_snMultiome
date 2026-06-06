@@ -5,9 +5,9 @@
 #PBS -j oe
 #PBS -o /home/whe/qsub_opt/${PBS_JOBID}.${PBS_JOBNAME}.log
 
-# read mapping file
-map_file="${HOME}/project/multiomics/CallPeak/data/map_region.csv"
-region=$(awk -F',' -v x=${PBS_ARRAYID} 'NR==x {print $1}' ${map_file})
+# read variables for PBS jobs
+var_list="${HOME}/project/multiomics/CallPeak/data/region_list.csv"
+region=$(awk -F',' -v x=${PBS_ARRAYID} 'NR==x {print $1}' ${var_list})
 echo -e "Running for ${region}\n"
 
 in_dir="${HOME}/project/multiomics/CallPeak/tnf5_bed/rep/${region}"
