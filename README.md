@@ -37,3 +37,7 @@ Identification of area-specific differential accessible peaks (DAPs) at the subc
 ## 09. AUP Enrichment
 
 Enrichment analysis of AUPs in evolutionary ages and TE families using Fisher's exact test.
+
+## 10. Electrophysiology and Morphology
+
+Extraction, comparison, and visualization of the electrophysiological and morphological characteristics of the neurons across neocortical areas.
