@@ -1,1 +1,1 @@
-"PBS job variables" folder contains the files listing the variables required to generate the PBS job array when submitting the shell scripts.
+This folder contains the files listing the variables required to generate the PBS job array when submitting the shell scripts.
